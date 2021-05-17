@@ -159,3 +159,60 @@
   159  ls
   160  history Day1_History.txt 
   161  history > Day1_History.txt 
+  162  git add . ; git commit -m "Day1_History.txt"; git push 
+  163  ls
+  164  mkdir 01-Dockerfiles/apache -p 
+  165  ls
+  166  cd 01-Dockerfiles/apache/
+  167  ls
+  168  vim Dockerfile
+  169  ls
+  170  docker run -it ubuntu:16.04
+  171  ls
+  172  vim Dockerfile 
+  173  ls
+  174  docker build -t myapache:v1 .
+  175  docker images 
+  176  docker run -d myapache:v1 
+  177  docker os 
+  178  docker ps 
+  179  docker inspect e3597ec61baa
+  180  curl 172.17.0.2
+  181  docker images 
+  182  docker inspect fbf2c88a292a
+  183  ls
+  184  cd /var/lib/docker/
+  185  ls
+  186  cd image/
+  187  ls
+  188  cd aufs/
+  189  ls
+  190  cd imagedb/
+  191  ls
+  192  cd content/
+  193  ls
+  194  cd sha256/
+  195  ls
+  196  ll
+  197  file 300e315adb2f96afe5f0b2780b87f28ae95231fe3bdd1e16b9ba606307728f55 
+  198  cat 300e315adb2f96afe5f0b2780b87f28ae95231fe3bdd1e16b9ba606307728f55
+  199  cd ..
+  200  ls
+  201  cd ..
+  202  ls
+  203  cd ..
+  204  ls
+  205  cd ..
+  206  ls
+  207  cd ..
+  208  ls
+  209  cd containers/
+  210  ls
+  211  docker ps 
+  212  cd e3597ec61baacb503175bbe2ea1610098030ac4d91d7fd4771b33ef8dc335e61/
+  213  ls
+  214  cd 
+  215  ls
+  216  cd docker-kubernetes-Ericsson-17-May-2021/
+  217  ls
+  218  history > Day1_History.txt 
