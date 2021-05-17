@@ -88,3 +88,74 @@
    88  cd docker-kubernetes-Ericsson-17-May-2021/
    89  ls
    90  history > Day1_History.txt
+   91  git add . 
+   92  git commit -m "Day1_History.txt"
+   93  git push 
+   94  ls
+   95  docker ps 
+   96  docker run -it ubuntu 
+   97  docker ps 
+   98  docker run -d ubuntu 
+   99  docker ps 
+  100  docker run -d ubuntu top 
+  101  docker ps 
+  102  docker run -d ubuntu ps -ef
+  103  docker ps 
+  104  docker run -itd ubuntu ps -ef
+  105  docker ps
+  106  docker run -itd ubuntu top 
+  107  docker ps
+  108  top 
+  109  docker ps
+  110  docker run -itd ubuntu top 
+  111  docker ps 
+  112  docker run -itd ubuntu 
+  113  docker ps 
+  114  docker run -itd --name test-1 ubuntu 
+  115  docker ps 
+  116  docker run -itd --name App-A-1 ubuntu 
+  117  docker run -itd --name App-A-2 ubuntu 
+  118  docker ps 
+  119  docker run -itd --name App-A-2 ubuntu 
+  120  docker attach App-A-2
+  121  docker ps 
+  122  docker kill 6a756e4fe062
+  123  docker ps 
+  124  docker ps -q
+  125  docker kill $(docker ps -q)
+  126  docker ps 
+  127  docker ps -a
+  128  docker  start App-A-2
+  129  docker ps 
+  130  docker run -it App-A-2
+  131  docker run -it ubuntu App-A-2
+  132  docker start App-A-2
+  133  docker ps 
+  134  docker attach App-A-2
+  135  ls
+  136  docker ps 
+  137  docker ps a- 
+  138  docker ps -a 
+  139  docker start App-A-2
+  140  docker ps 
+  141  docker inspect App-A-2
+  142  docker run -it ubuntu
+  143  docker ps 
+  144  docker inspect 533d7fb3d182
+  145  ls
+  146  docker ps -q
+  147  docker kill $(docker ps -q)
+  148  docker ps 
+  149  df -h 
+  150  ls
+  151  docker ps 
+  152  docker ps -a
+  153  docker ps -a 
+  154  docker ps -aq
+  155  docker rm $(docker ps -aq)
+  156  docker ps 
+  157  docker ps -a
+  158  docker images 
+  159  ls
+  160  history Day1_History.txt 
+  161  history > Day1_History.txt 
