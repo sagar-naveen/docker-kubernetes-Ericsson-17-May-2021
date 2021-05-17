@@ -1,0 +1,90 @@
+    1  ls
+    2  git clone https://github.com/amitvashisttech/docker-kubernetes-Ericsson-17-May-2021.git
+    3  ls
+    4  cd docker-kubernetes-Ericsson-17-May-2021/
+    5  ls
+    6  cd 00-Setup/
+    7  ls
+    8  rm -rf install-mailhog.sh 
+    9  ls
+   10  s
+   11  vim install-docker.sh 
+   12  ls
+   13  ./install-docker.sh 
+   14  git config credential.helper store
+   15  ls
+   16  cd ..
+   17  ls
+   18  cd 
+   19  ls
+   20  cd docker-kubernetes-Ericsson-17-May-2021/
+   21  ls
+   22  cd 00-Setup/
+   23  ls
+   24  docker version 
+   25  exit
+   26  ls
+   27  exit
+   28  pwd
+   29  ls
+   30  cat docker-kubernetes-Ericsson-17-May-2021/00-Setup/install-docker.sh 
+   31  apt-get install zip 
+   32  ls
+   33  apt-get install zip 
+   34  ls
+   35  docker version 
+   36  docker images
+   37  docker ps 
+   38  docker run busybox 
+   39  docker images
+   40  docker ps 
+   41  docker ps -a
+   42  docker run -it ubuntu 
+   43  cat /etc/os-release
+   44  ps -ef 
+   45  ls
+   46  docker ps 
+   47  docker image 
+   48  docker images
+   49  docker run -it centos:7
+   50  docker ps 
+   51  docker stop 1a3f4f94e379
+   52  docker ps 
+   53  docker container ls 
+   54  docker ps 
+   55  docker container ls 
+   56  docker container ls -a
+   57  docker ps -a
+   58  history 
+   59  ls
+   60  docker ps 
+   61  docker kill 79c90a0e5186
+   62  ls
+   63  docker login 
+   64  ls
+   65  docker images 
+   66  docker run -it busybox
+   67  ls
+   68  docker ps 
+   69  docker pull ubuntu:16.04
+   70  docker ps 
+   71  docker images 
+   72  docker pull centos
+   73  docker images 
+   74  docker run -it centos cat /etc/os-release
+   75  docker run -it centos:7 cat /etc/os-release
+   76  docker ps 
+   77  docker images 
+   78  docker run -it busybox
+   79  docker rmi busybox
+   80  docker ps -a 
+   81  docker rm 4e80e5d9a31a 89aff2f02c91
+   82  docker rmi busybox
+   83  docker rmi busybox --force 
+   84  docker images 
+   85  docker run -it busybox
+   86  history 
+   87  ls
+   88  cd docker-kubernetes-Ericsson-17-May-2021/
+   89  ls
+   90  history > Day1_History.txt
