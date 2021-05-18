@@ -1,0 +1,99 @@
+    1  ls
+    2  ip addr 
+    3  docker swarm init --advertise-addr 172.31.2.6
+    4  docker nodes ls 
+    5  docker node ls 
+    6  ls
+    7  cd 03-DockerSwarm/
+    8  ls
+    9  mkdir FirstDemo
+   10  ls
+   11  cd FirstDemo/
+   12  ls
+   13  vim docker-compose.yml
+   14  ls
+   15  docker stack deploy -c docker-compose.yml firstdemoapp
+   16  docker stack --help
+   17  docker stack ls
+   18  docker stack ps 
+   19  docker stack ps firstdemoapp
+   20  docker service ls 
+   21  docker ps 
+   22  ls
+   23  docker images 
+   24  ls
+   25  cd ..
+   26  ls
+   27  cp -rf FirstDemo 02-Demo
+   28  ls
+   29  cd 02-Demo/
+   30  ls
+   31  vim docker-compose.yml 
+   32  ls
+   33  docker stack deploy -c docker-compose.yml  myappdemo
+   34  docker service ls 
+   35  docker stack ps firstdemoapp_web
+   36  docker stack ps firstdemoapp
+   37  docker stack ps myappdemo
+   38  docker stack ps firstdemoapp
+   39  docker service ls 
+   40  docker service scale firstdemoapp_web=2
+   41  docker service scale myappdemo_web=10
+   42  docker stack ps firstdemoapp
+   43  docker stack ps myappdemo
+   44  ls
+   45  docker images 
+   46  docker stack rm firstdemoapp
+   47  ls
+   48  docker service ls 
+   49  docker stack rm myappdemo
+   50  docker service ls 
+   51  vim docker-compose.yml 
+   52  docker stack deploy -c docker-compose.yml  myappdemo
+   53  docker stack ps myappdemo
+   54  docker stack rm myappdemo
+   55  ls
+   56  cd ..
+   57  ls
+   58  mkdir 03-Visualizer
+   59  ls
+   60  cd 03-Visualizer/
+   61  ls
+   62  vim docker-compose.yaml
+   63  ls
+   64  docker service ls 
+   65  docker stack deploy -c docker-compose.yml  myappdemo-visalizer
+   66  ls
+   67  docker stack deploy -c docker-compose.yaml  myappdemo-visalizer
+   68  ls
+   69  cat 1
+   70  ls
+   71  vim docker-compose.yaml 
+   72  rm -rf 1
+   73  docker stack deploy -c docker-compose.yaml  myappdemo-visalizer
+   74  vim docker-compose.yaml 
+   75  docker stack deploy -c docker-compose.yaml  myappdemo-visalizer
+   76  docker service ls 
+   77  docker service ps  myappdemo-visalizer
+   78  history 
+   79  docker stack ls 
+   80  docker stack ps 
+   81  docker stack ps myappdemo-visalizer
+   82  ls
+   83  cd ..
+   84  ls
+   85  cd 02-Demo/
+   86  ls
+   87  docker stack deploy -c docker-compose.yaml  myappdemo
+   88  docker stack deploy -c docker-compose.yml  myappdemo
+   89  vim docker-compose.yml 
+   90  docker stack deploy -c docker-compose.yml  myappdemo
+   91  docker service scale myappdemo_web=1
+   92  docker service ls 
+   93  docker service scale myappdemo-visalizer_web=1
+   94  docker service scale myappdemo_web=5
+   95  docker service scale myappdemo-visalizer_web=10
+   96  ls
+   97  cd ..
+   98  ls
+   99  history > Docker_Swarm_History.txt
