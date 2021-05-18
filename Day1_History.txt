@@ -501,3 +501,40 @@
   501  cd ..
   502  ls
   503  history > Day1_History.txt
+  504  ls
+  505  git add . ; git commit -m "Day1_History.txt"; git push 
+  506  ip addr 
+  507  docker ps 
+  508  docker exec -it test-1 ip addr 
+  509  ls
+  510  mkdir 02-DockerCompose
+  511  cd 02-DockerCompose/
+  512  ls
+  513  sudo curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  514  chmod +x /usr/local/bin/docker-compose 
+  515  docker-compose version 
+  516  ls
+  517  vim docker-compose.yaml
+  518  docker images 
+  519  vim docker-compose.yaml 
+  520  ls
+  521  docker-compose up -d 
+  522  docker ps 
+  523  docker-compose ps 
+  524  docker-compose stop 
+  525  ls
+  526  vim docker-compose.yaml 
+  527  docker-compose up -d 
+  528  docker-compose ps 
+  529  vim docker-compose.yaml 
+  530  docker-compose up -d 
+  531  docker ps 
+  532  docker inspect 02-dockercompose_mytest-2_1
+  533  docker inspect 02-dockercompose_mytest-1
+  534  docker inspect 02-dockercompose_mytest-1_1
+  535  docker ps 
+  536  docker inspect 02-dockercompose_mytest_1
+  537  ls
+  538  cd ..
+  539  ls
+  540  history > Day1_History.txt 

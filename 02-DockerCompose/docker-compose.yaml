@@ -1,0 +1,17 @@
+---
+
+mytest: 
+  image: amitvashist7/myapacheericsson18may21:v4
+  volumes:
+  - /root:/var/www/amit
+  ports:
+  - '8080:80' 
+
+
+
+mytest-2: 
+  image: amitvashist7/myapacheericsson18may21:v2
+  volumes:
+  - /var/amit
+  ports:
+  - '80' 
