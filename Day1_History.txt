@@ -306,3 +306,76 @@
   306  cd docker-kubernetes-Ericsson-17-May-2021/
   307  ls
   308  history > Day1_History.txt 
+  309  git add . ; git commit -m "Day1_History.txt"; git push 
+  310  docker images 
+  311  ls
+  312  docker volume ls 
+  313  docker volume create myvol
+  314  docker volume ls 
+  315  docker volume inspect myvol
+  316  docker run -it --name voltest-1 -v myvol:/amit ubuntu
+  317  docker ps 
+  318  docker inspect f79740305222
+  319  ls
+  320  cd /var/lib/docker/
+  321  ls
+  322  cd volumes/
+  323  ls
+  324  cd myvol/
+  325  ls
+  326  cd _data/
+  327  ls
+  328  cat hello.txt 
+  329  hostname >> hello.txt ; date >> hello.txt 
+  330  cat hello.txt 
+  331  docker ps 
+  332  docker attach f79740305222
+  333  cd 
+  334  docker ps 
+  335  docker ps -a 
+  336  docker rm voltest-1
+  337  docker ps -a 
+  338  docker volume ls 
+  339  cat /var/lib/docker/volumes/myvol/_data/hello.txt 
+  340  docker run -it --name voltest-2 -v myvol:/eric ubuntu
+  341  ls
+  342  docker run -it --name voltest-3 -v myvol:/eric:ro ubuntu
+  343  docker run -it --name voltest-4 -v myvol:/eric ubuntu
+  344  ls
+  345  docker run -it --name voltest-5 -v /var/www/amit ubuntu
+  346  docker ps 
+  347  docker volume ls 
+  348  docker inspect de9e1f612cfb
+  349  cat /var/lib/docker/volumes/f9dd7efa0213aa5e7221523a8249e45a92f0ff08a4aaf473193ca89bfb789027/_data/abc.txt 
+  350  ls
+  351  history 
+  352  ls
+  353  cd docker-kubernetes-Ericsson-17-May-2021/
+  354  ls
+  355  pwd
+  356  docker run -it --name voltest-6 -v /root/docker-kubernetes-Ericsson-17-May-2021:/var/www/amit ubuntu
+  357  ls
+  358  cd
+  359  ls
+  360  docker run -itd --name wwwdata -v /var/lib/amit -v /var/log/amit -v /var/www/html/amit busybox 
+  361  docker ps 
+  362  docker inspect wwwdata
+  363  docker volume ls 
+  364  docker run -it --volume-from wwwdata ubuntu 
+  365  docker run -it --volumes-from wwwdata ubuntu 
+  366  docker run -it --volumes-from wwwdata --name abc ubuntu 
+  367  docker ps 
+  368  ls
+  369  docker kill $(docker ps -q)
+  370  docker rm $(docker ps -q)
+  371  docker rm $(docker ps -aq)
+  372  docker volume ls 
+  373  docker volume ls -q
+  374  docker volume rm $(docker volume ls -q)
+  375  docker volume ls 
+  376  ls
+  377  cd docker-kubernetes-Ericsson-17-May-2021/
+  378  ls
+  379  rm -rf hello.txt 
+  380  ls
+  381  history > Day1_History.txt 
