@@ -379,3 +379,125 @@
   379  rm -rf hello.txt 
   380  ls
   381  history > Day1_History.txt 
+  382  git add . ; git commit -m "Day1_History.txt"; git push 
+  383  ls
+  384  docker ps 
+  385  docker ps -a 
+  386  ip addr 
+  387  docker network ls 
+  388  docker network inspect cc3375162d48
+  389  docker run -it busybox 
+  390  docker ps 
+  391  docker inspect aa6fa5a1ad72
+  392  docker network inspect cc3375162d48
+  393  docker run -itd --name nwtest-1 busybox 
+  394  docker network inspect cc3375162d48
+  395  docker kill  "pensive_sinoussi"
+  396  docker network inspect cc3375162d48
+  397  docker run -itd --name nwtest-2 busybox 
+  398  docker network inspect cc3375162d48
+  399  ls
+  400  docker ps 
+  401  docker exec -it 82b3ff51645b ip addr 
+  402  docker exec -it 172.17.0.2 ip addr 
+  403  docker exec -it nwtest-1 ip addr 
+  404  ip addr 
+  405  docker run -itd --name nwtest-3 --network host busybox 
+  406  docker ps 
+  407  docker exec -it nwtest-1 ip addr 
+  408  docker exec -it nwtest-2 ip addr 
+  409  docker exec -it nwtest-3 ip addr 
+  410  docker ps 
+  411  docker exec -it nwtest-1 ping 172.17.0.2
+  412  docker exec -it nwtest-1 ping 172.17.0.3
+  413  docker exec -it nwtest-2 ping 172.17.0.3
+  414  docker exec -it nwtest-2 ping 172.17.0.2
+  415  docker network ls 
+  416  docker run -itd --name nwtest-4 --network none busybox 
+  417  docker exec -it nwtest-4 ip addr 
+  418  ls
+  419  docker ps 
+  420  docker kill  $(docker ps -q)
+  421  docker rm  $(docker ps -aq)
+  422  docker images 
+  423  docker run -d  --name test-1 amitvashist7/myapacheericsson18may21:v1
+  424  docker ps 
+  425  docker network inspect cc3375162d48
+  426  ls
+  427  curl 172.17.0.2
+  428  ip addr 
+  429  ls
+  430  docker run -d  --name test-2 -p 8080:80 amitvashist7/myapacheericsson18may21:v1
+  431  docker ps 
+  432  curl 172.17.0.2
+  433  curl 172.17.0.3
+  434  curl localhost
+  435  curl localhost:8080
+  436  netstat -tulnp 
+  437  systemctl status docker 
+  438  docker  ps -a 
+  439  docker kill $(docker  ps -aq)
+  440  docker rm $(docker  ps -aq)
+  441  ip addr 
+  442  apt-get install apache2 -y 
+  443  systemctl status apache2
+  444  ip addr 
+  445  docker run -d  --name test-1  amitvashist7/myapacheericsson18may21:v1
+  446  docker ps 
+  447  docker inspect 3c77b1384665
+  448  l
+  449  curl 172.17.0.2
+  450  ip addr 
+  451  route -n 
+  452  docker run -d  --name test-2  amitvashist7/myapacheericsson18may21:v1
+  453  curl 172.17.0.2
+  454  curl 172.17.0.3
+  455  route -n 
+  456  systemctl stop apache2 
+  457  systemctl disable  apache2 
+  458  systemctl status  apache2 
+  459  docker ps 
+  460  netstat -tulnp 
+  461  docker run -d  --name test-3 -p 8091:80  amitvashist7/myapacheericsson18may21:v1
+  462  netstat -tulnp 
+  463  systemctl status docker
+  464  netstat -tulp
+  465  history 
+  466  ls
+  467  cd 01-Dockerfiles/
+  468  ls
+  469  cd apache/
+  470  ls
+  471  vim index.html 
+  472  ls
+  473  vim Dockerfile 
+  474  ls
+  475  docker images 
+  476  docker build -t amitvashist7/myapacheericsson18may21:v3 . 
+  477  ls
+  478  docker ps 
+  479  docker iamegs 
+  480  docker images 
+  481  docker run -d  --name test-4 -P  amitvashist7/myapacheericsson18may21:v3
+  482  docker ps 
+  483  netstat -tulnp 
+  484  systemctl status docker
+  485  ls
+  486  vim index.html 
+  487  docker build -t amitvashist7/myapacheericsson18may21:v4 . 
+  488  docker run -d  --name test-5 --network host  amitvashist7/myapacheericsson18may21:v4
+  489  netstat -tulnp 
+  490  systemctl status apache2
+  491  systemctl start apache2
+  492  systemctl status apache2
+  493  docker ps 
+  494  netstat -tunlp 
+  495  systemctl stop  apache2
+  496  systemctl status apache2
+  497  ;ls
+  498  ls
+  499  cd ..
+  500  ls
+  501  cd ..
+  502  ls
+  503  history > Day1_History.txt
