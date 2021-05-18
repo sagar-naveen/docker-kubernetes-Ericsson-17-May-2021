@@ -216,3 +216,93 @@
   216  cd docker-kubernetes-Ericsson-17-May-2021/
   217  ls
   218  history > Day1_History.txt 
+  219  git add . ; git commit -m "Day1_History.txt"; git push 
+  220  ls
+  221  git pull 
+  222  ll
+  223  cd 01-Dockerfiles/
+  224  LL
+  225  ll
+  226  cd apache/
+  227  ll
+  228  history 
+  229  ls
+  230  docker images 
+  231  curl 172.17.0.2
+  232  ls
+  233  vim index.html
+  234  ls
+  235  vim Dockerfile 
+  236  ls
+  237  docker build -t myapache:v2 .
+  238  docker images 
+  239  docker run -d  --name test-1 myapache:v1 
+  240  docker run -d  --name test-2 myapache:v2 
+  241  curl 172.17.0.3
+  242  curl 172.17.0.4
+  243  docker images 
+  244  vim index.html 
+  245  ls
+  246  docker build -t myapache:v1 .
+  247  ls
+  248  docker ps 
+  249  docker images 
+  250  docker run -d  --name test-3 myapache:v1
+  251  curl 172.17.0.5
+  252  curl 172.17.0.2
+  253  curl 172.17.0.3
+  254  curl 172.17.0.4
+  255  curl 172.17.0.5
+  256  docker ps 
+  257  docker kill af8239718e1a e3597ec61baa 
+  258  docker ps 
+  259  docker run -d  --name test-4 myapache:v1
+  260  docker inspect test-4
+  261  curl 172.17.0.2
+  262  curl 172.17.0.3
+  263  curl 172.17.0.4
+  264  curl 172.17.0.5
+  265  curl 172.17.0.6
+  266  ls
+  267  docker images 
+  268  docker login 
+  269  docker push myapache:v1
+  270  docker tag c002fc2ff98e myapache-ericsson-18-May-21:v1
+  271  docker tag c002fc2ff98e amitvashist7/myapache-ericsson-18-May-21:v1
+  272  docker tag c002fc2ff98e amitvashist7/myapacheericsson18May21:v1
+  273  docker tag c002fc2ff98e "amitvashist7/myapacheericsson18May21:v1"
+  274  docker images 
+  275  docker tag c002fc2ff98e amitvashist/myapache:v1
+  276  docker images 
+  277  docker tag c002fc2ff98e amitvashist7/myapacheericsson18may21:v1
+  278  docker images 
+  279  docker push amitvashist7/myapacheericsson18may21:v1
+  280  docker tag fa382ecdba69 amitvashist7/myapacheericsson18may21:v2
+  281  docker images 
+  282  docker push amitvashist7/myapacheericsson18may21:v2
+  283  ls
+  284  docker ps 
+  285  docker kill $(docker ps -q) 
+  286  docker rm $(docker ps -aq) 
+  287  docker images 
+  288  docker images -1
+  289  docker images -q
+  290  docker rmi $(docker images -q)
+  291  docker rmi $(docker images -q) --force 
+  292  docker images 
+  293  docker logout 
+  294  docker run -d  --name test-apache-1 amitvashist7/myapacheericsson18may21:v1
+  295  docker ps 
+  296  curl 172.17.0.2
+  297  docker run -d  --name test-apache-1 amitvashist7/myapacheericsson18may21:v2
+  298  docker run -d  --name test-apache-2 amitvashist7/myapacheericsson18may21:v2
+  299  docker ps 
+  300  curl 172.17.0.3
+  301  curl 172.17.0.2
+  302  docker pull amitvashist7/apache-ex4
+  303  docker login 
+  304  docker pull amitvashist7/apache-ex4
+  305  ls
+  306  cd docker-kubernetes-Ericsson-17-May-2021/
+  307  ls
+  308  history > Day1_History.txt 
