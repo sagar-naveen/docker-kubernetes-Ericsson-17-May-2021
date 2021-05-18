@@ -538,3 +538,86 @@
   538  cd ..
   539  ls
   540  history > Day1_History.txt 
+  541  git add . ; git commit -m "Day1_History.txt"; git push 
+  542  ls
+  543  cd 02-DockerCompose/
+  544  ls
+  545  mkidr apache 
+  546  mkdir apache 
+  547  ls
+  548  mv docker-compose.yaml apache/
+  549  ls
+  550  mkdir -p wordpress-compose
+  551  cd wordpress-compose/
+  552  ls
+  553  mkdir -p nginx db-data logs/nginx wordpress
+  554  ls
+  555  vim nginx/wordpress.conf
+  556  ls
+  557  rm 1
+  558  ls
+  559  vim docker-compose.yaml
+  560  ls
+  561  docker-compose up -d 
+  562  docker ps 
+  563  docker kill $(docker ps -q)
+  564  docker rm $(docker ps -qa)
+  565  docker-compose up -d 
+  566  docker-compose ps 
+  567  ls
+  568  cd db-data/
+  569  ls
+  570  cd wpdb/
+  571  ls
+  572  cd ../
+  573  ls
+  574  cd ..
+  575  ls
+  576  vim docker-compose.yaml 
+  577  ls
+  578  docker-compose ps 
+  579  docker exec -it wordpress-compose_mysql_1 mysql -u root -p 
+  580  docker ps 
+  581  ls
+  582  vim docker-compose.yaml 
+  583  ls
+  584  docker ps 
+  585  curl localhost:9000
+  586  curl localhost:9000/wordpress
+  587  ls
+  588  cd wordpress/
+  589  ls
+  590  curl localhost:9000/wpadmin
+  591  docker ps 
+  592  ls
+  593  cd ..
+  594  ls
+  595  vim docker-compose.yaml 
+  596  docker-compose up -d 
+  597  docker ps 
+  598  docker-compose kill 
+  599  docker-compose rm 
+  600  ls
+  601  cd ..
+  602  l
+  603  du -sh * 
+  604  cd wordpress-compose/
+  605  ls
+  606  du -sh * 
+  607  rm -rf db-data/* 
+  608  ls
+  609  rm -rf wordpress/* 
+  610  ls
+  611  du -sh * 
+  612  less logs/nginx/access.log 
+  613  1
+  614  ls -ltr  logs/nginx/
+  615  less logs/nginx/hakase-access.log 
+  616  ls
+  617  rm -rf logs/nginx/* 
+  618  ls
+  619  cd ..
+  620  ls
+  621  cd ..
+  622  ls
+  623  history > Day1_History.txt 
