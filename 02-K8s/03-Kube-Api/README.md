@@ -1,4 +1,6 @@
-   34  kubectl get pods -n kube-system -o wide
+  ```
+  
+  34  kubectl get pods -n kube-system -o wide
    35  ls
    36  kubectl cluster-info
    37  kubectl version 
@@ -40,3 +42,4 @@
    73  mkdir 03-Kube-Api
    74  cd 03-Kube-Api/
    75  history > README.md
+```
