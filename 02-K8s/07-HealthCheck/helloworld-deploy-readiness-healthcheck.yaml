@@ -23,7 +23,7 @@ spec:
         readinessProbe:
           tcpSocket:
             port: 80
-          initialDelaySeconds: 5
+          initialDelaySeconds: 10
           timeoutSeconds: 10
         livenessProbe:
           httpGet:
